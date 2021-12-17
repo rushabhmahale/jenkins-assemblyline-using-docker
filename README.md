@@ -28,7 +28,9 @@ create Dockerfile file
 ![image](https://user-images.githubusercontent.com/63963025/146540891-f16da9b6-e43a-4e2e-a46b-26fa484ac374.png)
 after this build Docker container image using below command
 
+```
 docker build -t jenkins:v1 .
+```
 
 Note :- Before run above command goto directory where Dockerfile is placed.
 
@@ -36,11 +38,15 @@ Note :- Before run above command goto directory where Dockerfile is placed.
 
 step 1) launch docker container image
 
+```
 docker run -it -p 8080:80 --name jenkins jenkins:v1
+```
 
 step 2) check your jenkins image IP using
 
+```
 docker inspect jenkins | grep IP
+```
 
 copy IPAddress and paste it to browser url
 
